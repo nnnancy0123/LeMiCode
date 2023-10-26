@@ -43,6 +43,14 @@ body {
     width:18px;
       
 }
+/*iconOtherSet*/
+.iconOther{
+    float: left;
+    position:relative;
+    margin:10px 40px 50px -5px;
+    width:35px;
+}
+
 .sidebar {
     background-color: #f7f9fc;
     height: 100vh;
