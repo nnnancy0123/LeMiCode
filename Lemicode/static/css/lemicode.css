@@ -93,21 +93,38 @@ body {
 
 /*--FOOTER STYLE--*/
 footer {
-    padding-bottom: 13px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 0 -2px 8px rgba(120, 120, 120, 0.1);
+	margin:0 auto;
 }
 
 .banner2 {
+    position: relative;
+    left: 210px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 83px;
     display: flex;
     justify-content: center;
+    height: 150px;
+}
+
+/*logoStandSize*/
+.logoStand {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    left: 625px;
+    width: 110px;
+    transform: translate(0%, 0px);
 }
 
 /*Copyrightの様式*/
 .footerEnd {
-    padding-top: -10px;
+    position: relative;
+    padding-top: 130px;
     color: #7c7c7b;
+    right: 263px;/*文字の幅*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
 }
