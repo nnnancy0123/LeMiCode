@@ -45,28 +45,52 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div style="padding: 10px 0;  display: block;">
-                    <a href="/user/top" style="text-decoration: none; color: black;">
+         <div class="row">
+            <div class="col-md-12" style="background: #e8f2f9;">
+                <div class="navbar" style="padding: 10px 0; display: block;">
+                    <a th:href="@{/user/top}" style="text-decoration: none; color: black;">
                         <span>LemiCode</span>
                     </a>
-                    <span> &gt; </span>
-                    <span style="color: black;">SQL</span>
+                        <span> ></span>
+                        <span style="color: black;">Java基礎</span>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding: 10px;">
             <!-- Sidebar -->
-            <div class="col-md-2 sidebar">
-                <ul class="list-unstyled">
-                    <li onclick="changeColor(this)">JAVA 基礎</li>
-                    <li onclick="changeColor(this)">SQL</li>
-                    <li onclick="changeColor(this)">Spring Framework</li>
-                    <li onclick="changeColor(this)">HTML</li>
-                    <li onclick="changeColor(this)">CSS</li>
-                    <li onclick="changeColor(this)">JavaScript</li>
-                </ul>
+            <div class="col-md-3">
+                <!-- 左侧栏内容 -->
+                <div style="padding-top: 1%;"></div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">
+                        <span>Java基礎</span>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">
+                        <span>SQL</span>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">
+                        <span>Spring Framework</span>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">
+                        <span>HTML</span>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">
+                        <span>CSS</span>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">
+                        <span>JavaScipt</span>
+                    </a>
+                </div>
             </div>
             <!-- Main Content -->
             <div class="col-md-9 py-4">
@@ -80,41 +104,76 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer>
-            <!--底項目-->
-            <nav class="navbar navbar-expand-lg">
-                <!--縦LOGO-->
-                <div class="logoStand">
-                    <img class="photo1" src="static/image/LOGO縦.svg" alt="" href="">
+</div>
+<div class="row" style="padding: 10px;">
+       
+        
                 </div>
-                <!--バナー項目-->
-                <div>
-                    <ul class="navbar-nav banner2">
-                        <a class="nav-item" href="#" alt="">利用規約</a>
-                        <li class="nav-item">&emsp;&emsp;</li>
-                        <a class="nav-item" href="#" alt="">プライバシーポリシー</a>
-                        <li class="nav-item">&emsp;&emsp;</li>
-                        <a class="nav-item" href="#" alt="">Cookieポリシー</a>
-                        <li class="nav-item">&emsp;&emsp;</li>
-                        <a class="nav-item" href="#" alt="">特定商取引法に基づく表記</a>
-                        <li class="nav-item">&emsp;&emsp;</li>
-                        <a class="nav-item" href="#" alt="">運営会社</a>
-                    </ul>
-                </div>
-                <!--copyright-->
-                <div class="ServiceFooter_Footer_Copyrights footerEnd">
-                    <p class="text-muted small ">Copyright © 2023 LemiCode. All rights reserved.</p>
-                </div>
-            </nav>
-        </footer>
     </div>
+<footer class="bg-light text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>利用規約</strong>
+            </p>
+          </div>
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>プライバシーポリシー</strong>
+            </p>
+          </div>
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Cookieポリシー</strong>
+            </p>
+          </div>
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>特定商取引法に基づく表記</strong>
+            </p>
+          </div>
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>運営会社</strong>
+            </p>
+          </div>
+          <!--Grid column-->
 
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-dark" href="https://lemicode.com/">LemiCode. All rights reserved.</a>
+  </div>
+  <!-- Copyright -->
+</footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="static/js/sidebars.js"></script>
+        <script>
+       
+        $(document).ready(function () {
+            $('.list-group-item').on('click', function () {
+                $('.active').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
