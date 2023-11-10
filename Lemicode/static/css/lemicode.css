@@ -155,3 +155,8 @@ footer {
     left: 50%;
     transform: translateX(-50%) translateY(80%);
 }
+
+.active{
+    background-color: #1ea9d4ee !important;
+
+}

@@ -48,7 +48,8 @@
         <div class="row ">
             <div class="col-md-12" style="background: #e8f2f9;">
                 <div class="navbar" style="padding: 10px 0; display: block;">
-                    <a th:href="@{/user/top}" style="text-decoration: none; color: black;padding-right:4px;padding-left:30px;">
+                    <a th:href="@{/user/top}"
+                        style="text-decoration: none; color: black;padding-right:4px;padding-left:30px;">
                         <span>LemiCode</span>
                     </a>
                     <span> ></span>
@@ -58,67 +59,70 @@
         </div>
         <div class="row" style="padding: 10px;">
             <!-- Sidebar -->
-            <div class="col-md-3 ">
+            <div class="col-md-2 ">
                 <!-- 左侧栏内容 -->
                 <div style="padding-top: 1%;"></div>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action  border-light">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action active">
                         <span>Java基礎</span>
                     </a>
                 </div>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action  border-light">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action">
                         <span>SQL</span>
                     </a>
                 </div>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action  border-light">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action">
                         <span>Spring Framework</span>
                     </a>
                 </div>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action  border-light">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action">
                         <span>HTML</span>
                     </a>
                 </div>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action  border-light">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action">
                         <span>CSS</span>
                     </a>
                 </div>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action  border-light">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action">
                         <span>JavaScipt</span>
                     </a>
                 </div>
             </div>
             <!-- Main Content -->
-            <div class="col-md-9 py-4 ">
+            <div class="col-md-9 py-4 " style="left: 1.5cm;">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card border-info mb-2">
+                        <div class="card border-info mb-2" style="height: 10rem;">
                             <div class="card-body">
-                                <h5 class="card-title">はじめに</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
+                                <h5 class="card-title"
+                                    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">はじめに</h5><br>
+                                <p class="card-text" style="font-size:small;">PostgreSQL を Windows にインストールする手順について...
+                                    ...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card border-info mb-2">
-                            <div class="card-body ">
-                                <h5 class="card-title bg-transparent">電子カルテシステム(初級)</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
+                        <div class="card border-info mb-2" style="height: 10rem;">
+                            <div class="card-body" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                <h5 class="card-title">電子カルテシステム(初級)</h5><br>
+                                <p class="card-text" style="font-size:small;">テーブル定義書&テーブル作成... ...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card border-info">
+                        <div class="card border-info mb-2" style="height: 10rem;">
                             <div class="card-body">
-                                <h5 class="card-title">電子カルテシステム(中級)</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
+                                <h5 class="card-title"
+                                    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">電子カルテシステム(中級)
+                                </h5>
+                                <br>
+                                <p class="card-text" style="font-size:small;">
+                                    計算問題が苦手な方にオススメのメニューです。よく使う算術・代入演算子の意味を理解... ...</p>
                             </div>
                         </div>
                     </div>
@@ -126,15 +130,18 @@
                 <div class="row" style="padding: 10px;"></div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card border-info mb-3">
+                        <div class="card border-info mb-3" style="height: 10rem;">
                             <div class="card-body">
-                                <h5 class="card-title">電子カルテシステム(高級)</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
+                                <h5 class="card-title"
+                                    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">電子カルテシステム(高級)
+                                </h5><br>
+                                <p class="card-text" style="font-size:small;">
+                                    CランクやBランクの人にオススメのメニューです。多くのスキルチェック問題の論理演算処理を書ける... ...</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
