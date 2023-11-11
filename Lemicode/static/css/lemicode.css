@@ -101,8 +101,44 @@ body {
 
 .card {
     box-shadow: 0 2px 4px rgba(140, 199, 250, 0.1);
+    overflow: hidden;
+    /*丸サイズの設定*/
 }
 
+.card.boder-callout-info {
+    border-left-color: #1ea9d4ee !important;
+    border-left-width: 0.25rem
+}
+
+.card-body.moji {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+}
+
+.maru {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease;
+    opacity: 90%;
+}
+
+.maru:focus {
+    outline: none;
+    border: none;
+}
+
+.maru:hover {
+    transform: scale(11.5);
+}
 
 /*--FOOTER STYLE--*/
 footer {
@@ -145,7 +181,8 @@ footer {
 
 .pic {
     position: relative;
-    text-align: center; /* 让图像水平居中 */
+    text-align: center;
+    /* 让图像水平居中 */
 }
 
 .pic img {
@@ -156,7 +193,7 @@ footer {
     transform: translateX(-50%) translateY(80%);
 }
 
-.active{
+.active {
     background-color: #1ea9d4ee !important;
 
 }

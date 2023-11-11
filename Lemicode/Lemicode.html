@@ -41,7 +41,15 @@
                 <img type="button" class="icon" src="static/image/user.svg" alt="" href="#">
             </a>
             <!-- #icon Other Set -->
-            <a><img type="button" class="iconOther" src="static/image/other.svg" alt="" href=""></a>
+            <div class="dropdown">
+                <a><img type="button" class="iconOther dropdown-toggle" src="static/image/other.svg" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="container-fluid">
@@ -97,32 +105,42 @@
             <div class="col-md-9 py-4 " style="left: 1.5cm;">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card border-info mb-2" style="height: 10rem;">
-                            <div class="card-body">
+                        <div class="card border-info mb-2 boder-callout-info" style="height: 10rem;">
+                            <div class="card-body moji">
                                 <h5 class="card-title"
                                     style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">はじめに</h5><br>
                                 <p class="card-text" style="font-size:small;">PostgreSQL を Windows にインストールする手順について...
                                     ...</p>
                             </div>
+                            <button class="maru">
+                            </button>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card border-info mb-2" style="height: 10rem;">
-                            <div class="card-body" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                                <h5 class="card-title">電子カルテシステム(初級)</h5><br>
+                        <div class="card border-info mb-2 boder-callout-info" style="height: 10rem;">
+                            <div class="card-body moji">
+                                <h5 class="card-title"
+                                    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">電子カルテシステム(初級)
+                                </h5><br>
                                 <p class="card-text" style="font-size:small;">テーブル定義書&テーブル作成... ...</p>
                             </div>
+                            <button class="maru">
+                            </button>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card border-info mb-2" style="height: 10rem;">
-                            <div class="card-body">
+                        <div class="card border-info mb-3 boder-callout-info" style="height: 10rem;">
+                            <div class="card-body moji">
                                 <h5 class="card-title"
                                     style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">電子カルテシステム(中級)
                                 </h5>
                                 <br>
-                                <p class="card-text" style="font-size:small;">
+                                <p class="card-text " style="font-size:small;">
                                     計算問題が苦手な方にオススメのメニューです。よく使う算術・代入演算子の意味を理解... ...</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="maru">
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -130,14 +148,16 @@
                 <div class="row" style="padding: 10px;"></div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card border-info mb-3" style="height: 10rem;">
-                            <div class="card-body">
+                        <div class="card border-info mb-2 boder-callout-info" style="height: 10rem;">
+                            <div class="card-body moji">
                                 <h5 class="card-title"
                                     style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">電子カルテシステム(高級)
                                 </h5><br>
                                 <p class="card-text" style="font-size:small;">
                                     CランクやBランクの人にオススメのメニューです。多くのスキルチェック問題の論理演算処理を書ける... ...</p>
                             </div>
+                            <button class="maru">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -145,8 +165,8 @@
             </div>
         </div>
     </div>
-    <div class="row" style="padding: 10px;">
-    </div>
+    <div class="row">
+    </div><br>
     </div>
     <footer class="bg-light text-center">
         <div class="text-center p-3  pic">
